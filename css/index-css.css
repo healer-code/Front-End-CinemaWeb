@@ -46,9 +46,9 @@ table {
 a:hover{
 	text-decoration: none;
 }
-/*custom css*/
+/*========CUSTOM CSS ĐETAIL========*/
 
-/*Body css*/
+/*BODY CSS*/
 body{
 	background-image: url("../images/background.png");
 	font-family: 'Open Sans', sans-serif;
@@ -58,7 +58,7 @@ body{
 	width:100%;
 }
 
-/*Header css*/
+/*HEADER CLIENT CSS*/
 #mega-header{
 	font-size: 14px;
 	font-weight: 600;
@@ -69,16 +69,14 @@ body{
 	background: #e5a813;
 	height:47px;
 	width:100%;
-	min-width:1140px;
 }
 
 .topbar-content{
-	width: 1140px;
 	margin: 0 auto;
+	width:1140px;
 }
 
 .topbar-left{
-	
 	width:70%;
 	float:left;
 }
@@ -137,79 +135,47 @@ ul.clearfix li:nth-child(8){
 	padding-right: 5px;
 }
 
-
-.member-register{
-	float:right;
-	min-width: 204px;
-	background-color: #000;
-	padding: 1px;
-	color:#fff;
-	height: 64px;
+/*USER CLIENT AREA */
+.topbar-right{
+	width:30%;
+	line-height: 47px;
 }
 
-.topbar-content .topbar-right{
-	float:right;
-	width: 30%;
+.topbar-right .user-area{
+	float:left;
 }
 
-.member-register .member-icon{
-	text-align: center;
-	margin: 7px 0;
-	font-size: 12px;
-	position: relative;
-}
-
-.member-register .member-icon label.icon-member{
-	font-weight: 700;
-	background: url("../images/icon-member.png") no-repeat;
-	background-position:left;
-	background-size: 16px 16px;
-	padding-left: 20px;
-	padding-top: 3px;
-	cursor:pointer;
-}
-
-.member-register #register-icon{
-	text-align: center;
-	background-color:  #707070;
-	padding-top: 5px;
-}
-
-.member-register #register-icon li{
+.topbar-right .user-area ul li{
 	display: inline;
-	line-height: 28px;
-	margin-right: 5px;
+	margin-right: 20px;
 }
 
-.member-register #register-icon li a{
-	color:#fff;
-	background: url("../images/icon-dk.png") no-repeat;
-	background-position: left;
-	background-size: 12px 16px;
-	padding-left: 17px;
+.topbar-right .user-area ul li a{
+	color:black;
 }
 
-.member-register #register-icon li a:hover{
-	color :#f1c40f;
+.topbar-right .user-area ul li a:hover{
+	color:white;
 }
 
-/*menu css*/
+
+/*MENU CLIENT CSS*/
 #header-content{
-	width:1140px;
 	margin:0 auto;
+	width:1140px;
 	color : #fff;
 	height: 135px;
 }
 
 .header-left{
 	float: left;
-	width: 342px;
+	width: 30%;
 	margin-top: 20px;
 }
 
 .header-right{
 	float:right;
-	width: 798px;
+	width: 70%;
 }
 
 .header-right > ul{
@@ -271,4 +237,51 @@ ul.clearfix li:nth-child(8){
 	top: 5px;	
 	position: relative;
 }
-/*Footer css*/
+/*FOOTER CLIENT CSS*/
+
+
+/*MEDIA RESPONSIVE */
+@media (min-width: 1368px){
+	/*top bar*/
+	/*user area*/
+	/*navigation*/
+}
+
+@media (min-width: 1280px){
+	/*top bar*/
+	/*user area*/
+	/*navigation*/
+}
+
+@media (min-width: 1024px) and (max-width: 1280px){
+	/*top bar*/
+	div.topbar-content{
+		width: 1024px;
+		margin: 0 auto;
+	}
+	#header-content{
+		width: 1024px;
+		margin: 0 auto;
+	}
+
+	/*user area*/
+	/*navigation*/
+	.header-right{
+		width: 80%;
+	}
+	.header-left{
+		width:20%;
+	}
+}
+
+@media (min-width: 768px){
+	/*top bar*/
+	/*user area*/
+	/*navigation*/
+}
+
+@media (min-width: 360px){
+	/*top bar*/
+	/*user area*/
+	/*navigation*/
+}
