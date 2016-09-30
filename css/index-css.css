@@ -1,0 +1,274 @@
+/*Reset css*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a:hover{
+	text-decoration: none;
+}
+/*custom css*/
+
+/*Body css*/
+body{
+	background-image: url("../images/background.png");
+	font-family: 'Open Sans', sans-serif;
+}
+
+#main-wrapper{
+	width:100%;
+}
+
+/*Header css*/
+#mega-header{
+	font-size: 14px;
+	font-weight: 600;
+	width:100%;
+}
+
+.topbar{
+	background: #e5a813;
+	height:47px;
+	width:100%;
+	min-width:1140px;
+}
+
+.topbar-content{
+	width: 1140px;
+	margin: 0 auto;
+}
+
+.topbar-left{
+	
+	width:70%;
+	float:left;
+}
+
+.topbar-right{
+	width:30%;
+	float:right;
+}
+
+.menu-item{
+	line-height: 47px;
+}
+
+ul.clearfix li{
+	display:inline;
+	float: left;
+	padding-right: 25px;
+}
+
+ul.clearfix li a{
+	color:black;
+}
+
+ul.clearfix li a:hover{
+	color:#f1f1f1;
+	text-decoration: none;
+}
+
+.img-home{
+	background: url("../images/img-home.png") no-repeat;
+	width:25px;
+	height:25px;
+	display:inline-block;
+	position: relative;
+	top:5px;
+}
+
+.img-youtube{
+	background: url("../images/img-youtube.png") no-repeat;
+	width:31px;
+	height:31px;
+	display:inline-block;
+	position: relative;
+	top:8px;
+}
+
+.img-facebook{
+	background: url("../images/img-facebook.png") no-repeat;
+	width:31px;
+	height:31px;
+	display:inline-block;
+	position: relative;
+	top:6px;
+}
+ul.clearfix li:nth-child(8){
+	padding-right: 5px;
+}
+
+
+.member-register{
+	float:right;
+	min-width: 204px;
+	background-color: #000;
+	padding: 1px;
+	color:#fff;
+	height: 64px;
+}
+
+.topbar-content .topbar-right{
+	float:right;
+	width: 30%;
+}
+
+.member-register .member-icon{
+	text-align: center;
+	margin: 7px 0;
+	font-size: 12px;
+	position: relative;
+}
+
+.member-register .member-icon label.icon-member{
+	font-weight: 700;
+	background: url("../images/icon-member.png") no-repeat;
+	background-position:left;
+	background-size: 16px 16px;
+	padding-left: 20px;
+	padding-top: 3px;
+	cursor:pointer;
+}
+
+.member-register #register-icon{
+	text-align: center;
+	background-color:  #707070;
+	padding-top: 5px;
+}
+
+.member-register #register-icon li{
+	display: inline;
+	line-height: 28px;
+	margin-right: 5px;
+}
+
+.member-register #register-icon li a{
+	color:#fff;
+	background: url("../images/icon-dk.png") no-repeat;
+	background-position: left;
+	background-size: 12px 16px;
+	padding-left: 17px;
+}
+
+.member-register #register-icon li a:hover{
+	color :#f1c40f;
+}
+
+/*menu css*/
+#header-content{
+	width:1140px;
+	margin:0 auto;
+	color : #fff;
+	height: 135px;
+}
+
+.header-left{
+	float: left;
+	width: 342px;
+	margin-top: 20px;
+}
+
+.header-right{
+	float:right;
+	width: 798px;
+}
+
+.header-right > ul{
+	padding:0;
+	margin: 0;
+}
+
+.header-right > ul li{
+	float:left;
+	list-style: none;
+	padding: 10px 0 15px 35px;
+	line-height: 110px;
+}
+
+.header-right > ul li a{
+	font-size: 26px;
+	font-weight: 600;
+	text-transform: uppercase;
+	color:#fff;
+	outline: none;
+}
+
+.header-right > ul li a:hover{
+	color:#f1c40f;
+}
+
+.header-right  ul li a i.item-phim{
+	width: 32px;
+	height:32px;
+	background: url("../images/phim.png") no-repeat;
+	display:inline-block;
+	top: 5px;	
+	position: relative;
+}
+
+.header-right  ul li a i.item-lich{
+	width: 32px;
+	height:32px;
+	background: url("../images/lich.png") no-repeat;
+	display:inline-block;
+	top: 5px;	
+	position: relative;
+}
+
+.header-right  ul li a i.item-uudai{
+	width: 32px;
+	height:32px;
+	background: url("../images/uudai.png") no-repeat;
+	display:inline-block;
+	top: 5px;	
+	position: relative;
+}
+
+.header-right  ul li a i.item-rap{
+	width: 32px;
+	height:32px;
+	background: url("../images/ve.png") no-repeat;
+	display:inline-block;
+	top: 5px;	
+	position: relative;
+}
+/*Footer css*/
