@@ -78,7 +78,7 @@ body{
 
 .topbar-left{
 	float:left;
-	margin-left: 30px;
+	margin-left: 40px;
 }
 
 .menu-item{
@@ -297,11 +297,12 @@ ul.clearfix li:nth-child(8){
 	}
 
 	/*navigation area*/
-	.header-right{
-		
-	}	
 	.header-left{
-
+		width:20%!important;
+		float:left;
+	}	
+	.header-right {
+		width:80%;
 	}
 	.header-right > ul li a{
 		font-size: 20px;
