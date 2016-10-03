@@ -20,7 +20,8 @@
 				<div class="topbar-content">
 					<div class="topbar-left">
 						<div class="menu-item">
-							<ul class="clearfix">
+							<ul class="clearfix" id="topbar-nav">
+								<li class="res-toggle"><a href="javascript:void(0);" onclick="toggleClick()" class="tog-button"><i class="fa fa-bars" aria-hidden="true"></i></a></li>
 								<li><a class="img-home" href="#"></a></li>
 								<li><a href="#">Giới thiệu</a></li>
 								<li><a href="#">Sự kiện</a></li>
@@ -28,16 +29,15 @@
 								<li><a href="#">Tuyển dụng</a></li>
 								<li><a href="#">FAQs</a></li>
 								<li><a href="#">Liên hệ</a></li>
-								<li><a class="img-youtube" href="#"></a></li>
-								<li><a class="img-facebook" href="#"></a></li>
-							</ul> 
-						</div>						
+							</ul> 								
+						</div>	
+						
 					</div>
-
-					<!--user area -->
 					<div class="topbar-right">
 						<div class="user-area">
 							<ul>
+								<li><a class="img-youtube" href="#"></a></li>
+								<li><a class="img-facebook" href="#"></a></li>
 								<li>
 									<a href="#" id="user-login-area"><i class="fa fa-users" aria-hidden="true"></i>  Đăng nhập</a>
 								</li>
@@ -46,7 +46,9 @@
 								</li>
 							</ul>
 						</div>
-					</div>
+					</div>	
+					<!--user area -->
+					
 				</div>				
 			</div>
 			
@@ -59,7 +61,7 @@
 							<img class="img-responsive" alt="Hệ thống đặt vé rạp chiếu phim Megastar" src="images/logo.png">
 						</a>
 					</div>
-
+					
 					<div class="header-right">
 						<ul>
 						    <li id="A1">
@@ -105,6 +107,10 @@
 		</div>
 		<!--end of #Footer-->
 	</div>
+	
+	<!--js-->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
 	
 </body>
 </html>

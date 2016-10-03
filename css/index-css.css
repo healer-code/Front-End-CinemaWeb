@@ -77,27 +77,30 @@ body{
 }
 
 .topbar-left{
-	width:70%;
 	float:left;
-}
-
-.topbar-right{
-	width:30%;
-	float:right;
+	margin-left: 30px;
 }
 
 .menu-item{
 	line-height: 47px;
 }
 
+ul.clearfix{
+	overflow: hidden;
+}
+
 ul.clearfix li{
-	display:inline;
 	float: left;
 	padding-right: 25px;
 }
 
+ul.clearfix li:nth-child(2){
+	margin-top: 5px;
+}
 ul.clearfix li a{
 	color:black;
+	display: block;
+
 }
 
 ul.clearfix li a:hover{
@@ -114,6 +117,13 @@ ul.clearfix li a:hover{
 	top:5px;
 }
 
+ul.clearfix li.res-toggle{
+	display:none;
+}
+
+ul.clearfix li:first-child a i{
+	margin-left: 10px;
+}
 .img-youtube{
 	background: url("../images/img-youtube.png") no-repeat;
 	width:31px;
@@ -121,6 +131,7 @@ ul.clearfix li a:hover{
 	display:inline-block;
 	position: relative;
 	top:8px;
+	margin-left: 30px;
 }
 
 .img-facebook{
@@ -130,6 +141,7 @@ ul.clearfix li a:hover{
 	display:inline-block;
 	position: relative;
 	top:6px;
+	margin-left:-20px;
 }
 ul.clearfix li:nth-child(8){
 	padding-right: 5px;
@@ -137,28 +149,31 @@ ul.clearfix li:nth-child(8){
 
 /*USER CLIENT AREA */
 .topbar-right{
-	width:30%;
-	line-height: 47px;
+	margin-right: 20px;
+	float:top;
 }
-
-.topbar-right .user-area{
-	float:left;
-}
-
-.topbar-right .user-area ul li{
-	display: inline;
+.user-area ul li:first-child{
 	margin-right: 20px;
 }
+.user-area ul li{
+	display:inline-block;
+	line-height: 47px;
+}
+.user-area ul li{
+	display:inline-block;
+	line-height: 47px;
+	margin-right: 10px;
+}
 
-.topbar-right .user-area ul li a{
+.user-area ul li a{
 	color:black;
 }
 
-.topbar-right .user-area ul li a:hover{
+.user-area ul li a:hover{
 	color:white;
 }
-
-
+.user-area{
+}
 /*MENU CLIENT CSS*/
 #header-content{
 	margin:0 auto;
@@ -173,6 +188,9 @@ ul.clearfix li:nth-child(8){
 	margin-top: 20px;
 }
 
+.header-left a img{
+	margin-left: 30px;
+}
 .header-right{
 	float:right;
 	width: 70%;
@@ -186,7 +204,7 @@ ul.clearfix li:nth-child(8){
 .header-right > ul li{
 	float:left;
 	list-style: none;
-	padding: 10px 0 15px 35px;
+	padding: 10px 0 15px 20px;
 	line-height: 110px;
 }
 
@@ -240,48 +258,203 @@ ul.clearfix li:nth-child(8){
 /*FOOTER CLIENT CSS*/
 
 
-/*MEDIA RESPONSIVE */
-@media (min-width: 1368px){
-	/*top bar*/
+/*MEDIA RESPONSIVE PC first*/
+ @media (max-width: 1920px){
+	/*top area*/
 	/*user area*/
-	/*navigation*/
-}
+	/*navigation area*/
+ }
 
-@media (min-width: 1280px){
-	/*top bar*/
+ @media (max-width: 1366px){
+	/*top area*/
 	/*user area*/
-	/*navigation*/
-}
+	/*navigation area*/
+ }
 
-@media (min-width: 1024px) and (max-width: 1280px){
-	/*top bar*/
+ @media (max-width: 1280px){
+	/*top area*/
+	/*user area*/
+	/*navigation area*/
+ }
+
+ @media (max-width: 1024px){
+ 	/*top bar*/
 	div.topbar-content{
-		width: 1024px;
 		margin: 0 auto;
 	}
 	#header-content{
-		width: 1024px;
 		margin: 0 auto;
 	}
+	.topbar-left{
+		margin-left: 30px;
+		width: 70%;		
+	}
 
 	/*user area*/
-	/*navigation*/
+	.topbar-right{
+		position: absolute;
+		margin-left: 55%;
+	}
+
+	/*navigation area*/
 	.header-right{
-		width: 80%;
-	}
+		
+	}	
 	.header-left{
-		width:20%;
+
 	}
-}
+	.header-right > ul li a{
+		font-size: 20px;
+	}
+ }
 
-@media (min-width: 768px){
-	/*top bar*/
-	/*user area*/
-	/*navigation*/
-}
+ @media (max-width: 768px){
+	/*top area*/
+	/*old design*/
+	ul.clearfix li:not(:first-child){
+		display: none;
+	}
 
-@media (min-width: 360px){
-	/*top bar*/
+	ul.clearfix li.res-toggle{
+		float:left;
+		display:inline-block;
+		position: relative;
+		width: 30px;
+		height: 30px;
+		clear: both;
+	}
 	/*user area*/
-	/*navigation*/
+	.topbar-right{
+		position: absolute;
+		margin-left: 50%;
+	}
+
+
+	.topbar-left{
+		margin-left: 0px;
+		width: 100%;
+	}
+
+	/*end old design*/
+	ul.clearfix.responsive-topbar{
+		position:relative;		
+		width: 100%;
+		-webkit-box-shadow: 0 8px 6px -6px #F27935;
+	   -moz-box-shadow: 0 8px 6px -6px #F27935;
+	        box-shadow: 0 8px 6px -6px #F27935;
 }
+	}
+	
+	ul.clearfix.responsive-topbar li{
+		display: block;
+		float:none;
+	}
+	ul.clearfix.responsive-topbar li a {
+   	 	display: block;
+    	text-align: left;
+  	}
+	
+	
+	/*user area*/
+	/*navigation area*/
+	.header-left{
+		width: 30%;
+	}
+	.header-left img{
+		display: block;
+		margin-left: 250px;
+	}
+	.header-right{
+		float:left;		
+		margin-right: auto;
+	}
+	.header-right ul{
+		height: 138px;
+		margin-left: 40px;
+	}
+
+	/*style drop down menu*/
+	ul.clearfix.responsive-topbar li:not(:first-child){
+		height: 40px;
+		line-height: 40px;
+		padding-left: 10px;
+		background-color: #F5D76E;
+	}
+	ul.clearfix.responsive-topbar li:nth-child(2){
+		display: none;
+	}
+	ul.clearfix.responsive-topbar li:first-child {
+		margin-bottom: 15px;
+	}
+	ul.clearfix.responsive-topbar li:not(:first-child):hover{
+		background-color: #F4D03F;
+	}
+	ul.clearfix.responsive-topbar li:not(:first-child):hover a{
+		color:black;
+	}
+	ul.clearfix.responsive-topbar li:nth-child(9) a{
+		float:left;
+		display: inline;
+	}
+ }
+
+ @media (max-width: 360px){
+	/*top area*/
+	/*old design*/
+	ul.clearfix li:not(:first-child){
+		display: none;
+	}
+	ul.clearfix li.res-toggle{
+		float:left;
+		display:inline-block;
+	}
+	/*user area*/
+	.topbar-right{
+		position: absolute;
+		margin-left: 40%;
+	}
+
+
+	.topbar-left{
+		margin-left: 30px;
+		width: 100%;
+
+	}
+
+	/*end old design*/
+	ul.clearfix.responsive-topbar{
+		position:relative;
+		
+	}
+	ul.clearfix.responsive-topbar li.res-toggle{
+		position: absolute;
+		margin-left: 10px;
+	}
+	ul.clearfix.responsive-topbar{
+		margin-left: 10px;
+	}
+	ul.clearfix.responsive-topbar li:not(:first-child){
+		display: inline-block;
+		float:none;
+		margin-left: 10px;
+	}
+	ul.clearfix.responsive-topbar li a {
+   	 	display: block;
+    	text-align: left;
+  	}
+	/*user area*/
+	/*navigation area*/
+	.header-left{
+		width: 100%;
+		margin:  0 auto;
+	}
+	.header-right{
+		float:left;
+	}
+ }
+
+ @media (max-width: 320px){
+	/*top area*/
+	/*user area*/
+	/*navigation area*/
+ }
