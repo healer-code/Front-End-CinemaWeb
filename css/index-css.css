@@ -307,6 +307,9 @@ ul.clearfix li:nth-child(8){
 	.header-right {
 		width:80%;
 	}
+	.header-right ul li:first-child{
+		margin-left: 40px;
+	}
 	.header-right > ul li a{
 		font-size: 20px;
 	}
@@ -314,6 +317,38 @@ ul.clearfix li:nth-child(8){
 
  @media (max-width: 800px){
 	/*top area*/
+	ul.clearfix li:not(:first-child){
+		display: none;
+	}
+	.menu-item {
+		width: 100%;
+	}
+	ul.clearfix li.res-toggle{
+		float:left;
+		display:inline-block;
+		position: relative;
+		width: 30px;
+		height: 30px;
+		clear: both;
+	}
+
+	ul.clearfix.responsive-topbar{
+		position:relative;		
+		width: 100%;
+		-webkit-box-shadow: 0 8px 6px -6px #F27935;
+	    -moz-box-shadow: 0 8px 6px -6px #F27935;
+	    box-shadow: 0 8px 6px -6px #F27935;
+	}
+	
+	ul.clearfix.responsive-topbar li{
+		display: block;
+		float:none;
+	}
+	ul.clearfix.responsive-topbar li a {
+   	 	display: block;
+    	text-align: left;
+  	}
+
 	/*user area*/
 	/*navigation area*/
 	.header-left{
@@ -324,10 +359,34 @@ ul.clearfix li:nth-child(8){
 		margin-left: 250px!important;
 	}
 	.header-right {
-		width:60%;
+		width:100%;
 	}
 	.header-right > ul li a{
 		font-size: 22px;
+	}
+
+	/*style drop down menu*/
+	ul.clearfix.responsive-topbar li:not(:first-child){
+		height: 40px;
+		line-height: 40px;
+		padding-left: 10px;
+		background-color: #F5D76E;
+	}
+	ul.clearfix.responsive-topbar li:nth-child(2){
+		display: none;
+	}
+	ul.clearfix.responsive-topbar li:first-child {
+		margin-bottom: 15px;
+	}
+	ul.clearfix.responsive-topbar li:not(:first-child):hover{
+		background-color: #F4D03F;
+	}
+	ul.clearfix.responsive-topbar li:not(:first-child):hover a{
+		color:black;
+	}
+	ul.clearfix.responsive-topbar li:nth-child(9) a{
+		float:left;
+		display: inline;
 	}
  }
 
@@ -363,9 +422,8 @@ ul.clearfix li:nth-child(8){
 		position:relative;		
 		width: 100%;
 		-webkit-box-shadow: 0 8px 6px -6px #F27935;
-	   -moz-box-shadow: 0 8px 6px -6px #F27935;
+	    -moz-box-shadow: 0 8px 6px -6px #F27935;
 	    box-shadow: 0 8px 6px -6px #F27935;
-}
 	}
 	
 	ul.clearfix.responsive-topbar li{
