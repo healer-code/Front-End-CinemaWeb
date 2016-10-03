@@ -124,6 +124,9 @@ ul.clearfix li.res-toggle{
 ul.clearfix li:first-child a i{
 	margin-left: 10px;
 }
+ul.clearfix li:first-child a i{
+	margin-left: 10px;
+}
 .img-youtube{
 	background: url("../images/img-youtube.png") no-repeat;
 	width:31px;
@@ -196,9 +199,9 @@ ul.clearfix li:nth-child(8){
 	width: 70%;
 }
 
-.header-right > ul{
+.header-right  ul{
 	padding:0;
-	margin: 0;
+	margin: 0!important;
 }
 
 .header-right > ul li{
@@ -309,6 +312,25 @@ ul.clearfix li:nth-child(8){
 	}
  }
 
+ @media (max-width: 800px){
+	/*top area*/
+	/*user area*/
+	/*navigation area*/
+	.header-left{
+		width:100%!important;
+		float:left;
+	}	
+	.header-left a img {
+		margin-left: 250px!important;
+	}
+	.header-right {
+		width:60%;
+	}
+	.header-right > ul li a{
+		font-size: 22px;
+	}
+ }
+
  @media (max-width: 768px){
 	/*top area*/
 	/*old design*/
@@ -342,7 +364,7 @@ ul.clearfix li:nth-child(8){
 		width: 100%;
 		-webkit-box-shadow: 0 8px 6px -6px #F27935;
 	   -moz-box-shadow: 0 8px 6px -6px #F27935;
-	        box-shadow: 0 8px 6px -6px #F27935;
+	    box-shadow: 0 8px 6px -6px #F27935;
 }
 	}
 	
@@ -371,7 +393,7 @@ ul.clearfix li:nth-child(8){
 	}
 	.header-right ul{
 		height: 138px;
-		margin-left: 40px;
+		margin-left: 40px!important;
 	}
 
 	/*style drop down menu*/

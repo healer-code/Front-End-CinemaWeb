@@ -17,7 +17,7 @@ $(window).resize(function()
 {
 	var width = screen.width;
 		height = screen.height;
-	if (width>=1024)
+	if (width>=900)
 	{
 		var x = document.getElementById("topbar-nav");
 		if (x.className === "clearfix")
