@@ -481,21 +481,45 @@ ul.clearfix li:nth-child(8){
 	}
  }
 
- @media (max-width: 600px){
+ @media (max-width: 650px){
 	/*top area*/
-	.user-area{
-		border: 1px solid white;
-	}
 	.user-area ul li{
 		float: left;
 	}
 	.user-area ul{
-		border: 1px solid white;
 		margin-left: -150px;
 	}
-	/*old design*/
+	.user-area ul li:first-child{
+		float: left;
+		display: block;
+		margin-left: 15px;
+	}
+	.user-area ul li:nth-child(3) a, .user-area ul li:nth-child(4) a{
+		font-size: 0.75em;
+	}
+
 	/*user area*/
 	/*navigation area*/
+	.header-left{
+		display:none;
+		width:100%;
+		text-align: center;
+	}
+	.header-right ul{
+		margin-left: -1%!important;
+	}
+	#A3{
+		margin-top:100px;
+		margin-left :-300px;
+		float:left;
+		display: inline-block;
+	}
+	#A4{
+		margin-top:100px;
+		margin-left :-100px;
+		float:left;
+		display: inline-block;
+	}
  }
 
  @media (max-width: 320px){
