@@ -315,13 +315,14 @@ ul.clearfix li:nth-child(8){
 	}
  }
 
- @media (max-width: 800px){
+ @media (max-width: 1000px){
 	/*top area*/
 	ul.clearfix li:not(:first-child){
 		display: none;
 	}
-	.menu-item {
+	.menu-item ul{
 		width: 100%;
+		float:left;
 	}
 	ul.clearfix li.res-toggle{
 		float:left;
@@ -453,7 +454,8 @@ ul.clearfix li:nth-child(8){
 		height: 138px;
 		margin-left: 40px!important;
 	}
-
+	.header-right ul{\
+	}
 	/*style drop down menu*/
 	ul.clearfix.responsive-topbar li:not(:first-child){
 		height: 40px;
@@ -479,59 +481,21 @@ ul.clearfix li:nth-child(8){
 	}
  }
 
- @media (max-width: 360px){
+ @media (max-width: 600px){
 	/*top area*/
+	.user-area{
+		border: 1px solid white;
+	}
+	.user-area ul li{
+		float: left;
+	}
+	.user-area ul{
+		border: 1px solid white;
+		margin-left: -150px;
+	}
 	/*old design*/
-	ul.clearfix li:not(:first-child){
-		display: none;
-	}
-	ul.clearfix li.res-toggle{
-		float:left;
-		display:inline-block;
-	}
-	/*user area*/
-	.topbar-right{
-		position: absolute;
-		margin-left: 40%;
-	}
-
-
-	.topbar-left{
-		margin-left: 30px;
-		width: 100%;
-
-	}
-
-	/*end old design*/
-	ul.clearfix.responsive-topbar{
-		position:relative;
-		
-	}
-	ul.clearfix.responsive-topbar li.res-toggle{
-		position: absolute;
-		margin-left: 10px;
-	}
-	ul.clearfix.responsive-topbar{
-		margin-left: 10px;
-	}
-	ul.clearfix.responsive-topbar li:not(:first-child){
-		display: inline-block;
-		float:none;
-		margin-left: 10px;
-	}
-	ul.clearfix.responsive-topbar li a {
-   	 	display: block;
-    	text-align: left;
-  	}
 	/*user area*/
 	/*navigation area*/
-	.header-left{
-		width: 100%;
-		margin:  0 auto;
-	}
-	.header-right{
-		float:left;
-	}
  }
 
  @media (max-width: 320px){
