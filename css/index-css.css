@@ -258,33 +258,143 @@ ul.clearfix li:nth-child(8){
 	top: 5px;	
 	position: relative;
 }
+
 /*FOOTER CLIENT CSS*/
 #wrapper{
-	margin-bottom: 200px;
+	margin-bottom: 120px;
 }
+
 #mega-footer{
 	width:100%;
-	height: 180px;
+	height: 188px;
 	position: relative;	
-	margin-top: 40px;
 	bottom: 0px;
 	left:0px;
 	right:0px;
+	background-color :#e5a813;
 	
 }
 
 #container{
-	background-color: #E5A813;
-	height: 200px;
+	position: absolute;
+	width: 100%;
+	display: inline-block;
 	bottom: 0px;
 }
+
 #star-left{
+	float:left;
 	left:0px;
-	width: 30%;
+	width: 20%;
+	display: inline-block;
 }
 
-#star-left img{
+#footer-content{
+	width: 80%;	
+	height: 100%;
+	display: inline-block;
+	float:left;
 }
+
+.footer-left{
+
+	height: 165px;
+	display: block;
+	width: 100%;
+	line-height: 165px;
+}
+
+.copyright{
+
+}
+
+.copy-left{
+	margin-top: 15px;
+}
+
+.copy-left h6{
+	margin-top: 0px;
+	margin-bottom: 2px;
+	font-size: 12px;
+	font-weight: bold;
+	color:#3e3e3e;
+	text-align: center;
+}
+
+.copy-left p{
+	font-size: 12px;
+	font-weight: 400;
+	color:#3e3e3e;
+	text-align: center;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.phone-number{
+	display: inline-block;
+	position: relative;
+	height: 65px;
+	color:#fff;
+	padding: 10px 0;
+	text-align: center;
+}
+
+.icon-phone{
+	background-color:#fff;
+	width:60px;
+	height:60px;
+	text-align: center;
+	display: inline-block;
+	border-radius: 50% 50%;
+	-webkit-border-radius: 50% 50%;
+	-moz-border-radius: 50% 50%;
+	border: 6px solid #3E3E3E;
+	position: relative;
+	z-index: 10;
+	vertical-align: middle;
+	margin-left: 20px;
+}
+
+.icon-phone i.icons{
+	background: url("../images/icon-phone.png") no-repeat center;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	display: table;
+	margin-left: 0;
+	vertical-align: middle;
+	margin-left: 5px;
+	margin-top: 5px;
+}
+
+
+.number-phone{
+	font-size: 21px;
+	color: white;
+	width:150px;
+	display: inline-block;
+	position: absolute;
+	height: 47px;
+	font-weight: 700;
+}
+
+.footer-left h3{
+	font-size: 24px;
+	font-weight: 700;
+	color:#000;
+	display: inline-block;
+	text-align: left;
+	padding-left: 4px;
+	margin-bottom: 5px;
+	margin-right: 20px;
+}
+
+.footer-left{
+	text-align: center;
+	margin-left: -100px;
+}
+
+
 /*MEDIA RESPONSIVE PC first*/
  @media (max-width: 1920px){
 	/*top area*/
@@ -412,6 +522,26 @@ ul.clearfix li:nth-child(8){
 	ul.clearfix.responsive-topbar li:nth-child(9) a{
 		float:left;
 		display: inline;
+	}
+
+	/*footer*/
+	#star-left, .footer-left,.copy-left p{
+		display: none;
+	}
+	#mega-footer{
+		height:50px;	
+	}
+	#wrapper{
+		margin-bottom: 50px;
+	}
+	.copy-left h3{
+		line-height: 50px;
+	}
+	#container{
+		height:50px;
+	}
+	#footer-content{
+		width: 100%;
 	}
  }
 
