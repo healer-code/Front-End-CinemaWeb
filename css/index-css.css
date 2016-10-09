@@ -352,7 +352,6 @@ ul.clearfix li:nth-child(8){
 	position: relative;
 	z-index: 10;
 	vertical-align: middle;
-	margin-left: 20px;
 }
 
 .icon-phone i.icons{
@@ -361,7 +360,6 @@ ul.clearfix li:nth-child(8){
 	height: 40px;
 	position: absolute;
 	display: table;
-	margin-left: 0;
 	vertical-align: middle;
 	margin-left: 5px;
 	margin-top: 5px;
@@ -373,7 +371,7 @@ ul.clearfix li:nth-child(8){
 	color: white;
 	width:150px;
 	display: inline-block;
-	position: absolute;
+	position: relative;
 	height: 47px;
 	font-weight: 700;
 }
@@ -386,7 +384,7 @@ ul.clearfix li:nth-child(8){
 	text-align: left;
 	padding-left: 4px;
 	margin-bottom: 5px;
-	margin-right: 20px;
+	margin-right: 15px;
 }
 
 .footer-left{
@@ -525,7 +523,7 @@ ul.clearfix li:nth-child(8){
 	}
 
 	/*footer*/
-	#star-left, .footer-left,.copy-left p{
+	#star-left, .footer-left, .copy-left p{
 		display: none;
 	}
 	#mega-footer{
