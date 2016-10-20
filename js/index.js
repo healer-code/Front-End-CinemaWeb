@@ -31,3 +31,11 @@ $(window).resize(function()
 	}	
 });
 
+
+//slider 
+$(document).ready(function(){
+  $('.bxslider').bxSlider({
+  	adaptiveHeight: true,
+  	adaptiveWidth: true
+  });
+});
