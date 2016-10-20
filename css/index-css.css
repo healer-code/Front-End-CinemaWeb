@@ -491,6 +491,10 @@ ul.clearfix li:nth-child(8){
 	position: relative;
 	font-size:1em;
 }
+
+.mega-content{
+	margin-left: 5px;
+}
 /* ---- end of master page ---- */
 
 /*MEDIA RESPONSIVE PC first*/
