@@ -506,6 +506,9 @@ ul.clearfix li:nth-child(8){
  		width:1100px;
  	}
  	/*top bar*/
+	.user-area{
+ 		margin-left: 50px;
+ 	}
 	div.topbar-content{
 		margin: 0 auto!important;
 	}
