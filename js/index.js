@@ -33,8 +33,13 @@ $(window).resize(function()
 
 
 //slider 
-$(document).ready(function(){
+$(document).ready(function(e){
   $('.bxslider').bxSlider({
+  	mode:'horizontal',
+  	auto: true,
+ 	autoControls: true,
+  	speed:2000,
+  	pause:500,
   	adaptiveHeight: true,
   	adaptiveWidth: true
   });
