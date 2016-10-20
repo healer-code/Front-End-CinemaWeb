@@ -27,7 +27,6 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-	min-height: 100%;
 }
 ol, ul {
 	list-style: none;
@@ -52,11 +51,16 @@ a:hover{
 /*BODY CSS*/
 html{
 	min-height: 100%;
+
 }
 body{
 	background-image: url("../images/background.png");
 	font-family: 'Open Sans', sans-serif;
 	margin-bottom: 0px;
+	width: 100%;
+	left:0;
+	right:0;
+	display: block;
 }                                                                                      
 
 #main-wrapper{
@@ -399,6 +403,14 @@ ul.clearfix li:nth-child(8){
 	margin-left: -100px;
 }
 
+/*CONTENT BODY*/
+#wrapper{
+	color: white;
+}
+
+/*  ----  slider phim   ----*/
+
+
 
 /*MEDIA RESPONSIVE PC first*/
  @media (max-width: 1920px){
@@ -414,9 +426,17 @@ ul.clearfix li:nth-child(8){
 	/*navigation area*/
 	.header-left{
 		padding-left: 190px;
+		
+	}
+	.header-left img{
+		width:100%;
 	}
 	.header-right{
 		padding-left: 300px;
+		padding-top: 35px;
+	}
+	.header-right ul li a{
+		font-size: 35px;
 	}
  }
 
@@ -436,6 +456,14 @@ ul.clearfix li:nth-child(8){
 	}
 	.header-right{
 		padding-left: 110px;
+		padding-top: 25px;
+	}
+
+	.header-left img{
+		width:100%;
+	}
+	.header-right ul li a{
+		font-size: 25px;
 	}
  }
 
@@ -474,6 +502,9 @@ ul.clearfix li:nth-child(8){
 
 
  @media (max-width: 1024px){
+ 	body{
+ 		width:1100px;
+ 	}
  	/*top bar*/
 	div.topbar-content{
 		margin: 0 auto!important;
@@ -608,6 +639,8 @@ ul.clearfix li:nth-child(8){
 		height:50px;	
 		position: relative;
 	}
+
+
 	.copy-left h3{
 		line-height: 50px;
 	}
@@ -619,7 +652,15 @@ ul.clearfix li:nth-child(8){
 	}
  }
 
+@media (max-width: 800px){
+ 	body{
+ 		width:876px;
+ 	}
+}
  @media (max-width: 768px){
+ 	body{
+ 		width:100%;
+ 	}
 	/*top area*/
 	/*old design*/
 	ul.clearfix li:not(:first-child){
