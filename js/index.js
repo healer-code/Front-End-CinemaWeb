@@ -35,12 +35,13 @@ $(window).resize(function()
 //slider 
 $(document).ready(function(e){
   $('.bxslider').bxSlider({
-  	mode:'horizontal',
+  	mode:'fade',
   	auto: true,
  	autoControls: true,
-  	speed:2000,
-  	pause:500,
+  	speed:1000,
   	adaptiveHeight: true,
-  	adaptiveWidth: true
+  	adaptiveWidth: true,
+	captions: true,
+	autoHover: true
   });
 });
